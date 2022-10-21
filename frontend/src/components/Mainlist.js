@@ -86,7 +86,7 @@ import { useEffect } from "react";
 export default function Mainlist() {
   const [array, setArray] = useState([]);
   useEffect(()=>{
-    const url = "http://localhost:3000/dev/Getlead";
+    const url = "https://2rqq5exibb.execute-api.us-east-1.amazonaws.com/dev/Getlead";
     const data = {};
     const Header = {};
     axios.post(url, data, { Headers: Header })
