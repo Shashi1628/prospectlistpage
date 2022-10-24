@@ -6,9 +6,27 @@ import LeftBar from "./components/LeftBar";
 import Titlebar from "./components/Titlebar";
 import Filterbar from "./components/Filterbar";
 import Mainlist from "./components/Mainlist";
+import { useEffect } from "react";
+import { useState } from "react";
+import axios from "axios";
 // import Form from "./components/Form";
 
 export default function ProspectListpage() {
+  const [array, setArray] = useState([]);
+  useEffect(()=>{
+    const url = "http://localhost:3000/dev/Getlead";
+    const data = {};
+    const Header = {};
+    axios.post(url, data, { Headers: Header })
+      .then((res) => {
+        // setArray1(Json.stringify(res.data));
+       console.log("Response==>" + JSON.stringify(res.data));
+       setArray((res.data))
+      })
+      .catch((err) => {
+        console.log("Error==>" + err);
+      });
+    },[]);
   return (
     <>
       <div className="ProspectListpage">
@@ -37,7 +55,7 @@ export default function ProspectListpage() {
             <Filterbar />
           </div>
           <div className="ProspectListpage_Mainlist">
-            <Mainlist />
+            <Mainlist array={array} setArray={setArray} />
           </div>
         </div>
       </div>

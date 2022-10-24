@@ -12,7 +12,7 @@ body{
 .titlebar_bagSquare{
     background-color: white;
     width: 16%;
-    padding: 4px;
+    padding: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,9 +71,9 @@ body{
     font-weight: 100;
 }
 .titlebar_bagIcon_Products{
-    margin-left: 20px;
+    margin-left: 10px;
     margin-right: 28px;
-    font-size: 20px;
+    font-size: 15px;
     color:#7D8FB3;
     font-weight: 550;
     opacity: 20px;
@@ -81,22 +81,25 @@ body{
 
 }
 .titlebar_bagIcon_Active{
-    margin-left: 210px;
+    margin-left: 240px;
     margin-right: 20px;
     color: #8833FF;
+    font-weight: bold;
 }
 .titlebar_bagIcon_Draft{
     margin-left: 20px;
     margin-right: 20px;
+    font-weight: bold;
 }
 .titlebar_bagIcon_Assembly{
     margin-left: 20px;
     margin-right: 20px;
+    font-weight: bold;
 }
 .titlebar_underline{
     
     background-color: #8833FF;
-    margin: 0px 0px 0px 390px;
+    margin: 0px 0px 0px 395px;
     width: 74px;
     font-size: 2px;
     

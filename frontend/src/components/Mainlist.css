@@ -52,6 +52,7 @@
   color: #c3cad9;
   font-size: 1.2rem;
   border: 1px solid lightgray;
+  margin-left: -40px;
   
 }
 .Mainlist_Innerbox {
@@ -78,6 +79,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 60px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .Mainlist_list_row_topSelected{
   display: flex;
@@ -89,7 +91,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 60px;
-  
+  font-family: Arial, Helvetica, sans-serif;
   
 }
 
