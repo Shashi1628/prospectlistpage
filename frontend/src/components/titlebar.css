@@ -85,16 +85,19 @@ body{
     margin-right: 20px;
     color: #8833FF;
     font-weight: bold;
+    font-size: 14px;
 }
 .titlebar_bagIcon_Draft{
     margin-left: 20px;
     margin-right: 20px;
     font-weight: bold;
+    font-size: 14px;
 }
 .titlebar_bagIcon_Assembly{
     margin-left: 20px;
     margin-right: 20px;
     font-weight: bold;
+    font-size: 14px;
 }
 .titlebar_underline{
     
